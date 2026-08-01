@@ -1,200 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us — Sugar Artisan Bakery</title>
-<meta name="description" content="Meet the family behind Sugar bakery and the head chef whose training in classic pastry and sourdough technique shapes everything we bake.">
-<link rel="canonical" href="https://example.com/about.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="About Sugar — Our Story & Our Chef">
-<meta property="og:description" content="The story of Sugar bakery and the chef behind every recipe.">
-<meta property="og:image" content="images/chef/chef.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Sugar Leaven Patisserie - our story, our chef Aditi's culinary journey, and our commitment to artisan baking excellence.">
+    <meta name="keywords" content="about Sugar Leaven, bakery story, pastry chef Aditi, artisan bakery Mumbai">
+    <meta name="author" content="Sugar Leaven Patisserie">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="About Sugar Leaven | Our Story">
+    <meta property="og:description" content="Discover the story behind Sugar Leaven Patisserie and meet our professional pastry chef, Aditi.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sugarleaven.com">
+    <meta property="og:image" content="images/chef/chef.jpg">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Sugar Leaven | Our Story">
+    <meta name="twitter:description" content="Discover the story behind Sugar Leaven Patisserie and meet our professional pastry chef, Aditi.">
+    <meta name="twitter:image" content="images/chef/chef.jpg">
+    
+    <title>About Sugar Leaven | Our Story</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "Sugar Leaven Patisserie",
+        "description": "Premium artisan bakery offering handcrafted cakes, pastries, sourdough, and celebration cakes.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Shop no. 39, First floor, Godrej Urban Park, Sangharsh Nagar, Chandivali, Powai",
+            "addressLocality": "Mumbai",
+            "addressRegion": "Maharashtra",
+            "postalCode": "400072",
+            "addressCountry": "IN"
+        },
+        "telephone": "+91-87000-81249",
+        "url": "https://sugarleaven.com",
+        "image": "images/chef/chef.jpg"
+    }
+    </script>
 </head>
 <body>
-
-<header class="site-header">
-  <div class="container">
-    <a href="index.html" class="logo" aria-label="Sugar — home">
-      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <circle cx="24" cy="24" r="23" stroke="#B8925A" stroke-width="1.5"/>
-        <path d="M14 27c1-7 6-13 10-13s9 6 10 13c0 4-4.5 7-10 7s-10-3-10-7Z" stroke="#3E2723" stroke-width="1.5" fill="none"/>
-        <path d="M18 22c2-3 3-5 3-7M24 20c0-3 1-5.5 2.5-8M30 22c-1.5-2.5-2-5-2-7" stroke="#B8925A" stroke-width="1.3" stroke-linecap="round"/>
-      </svg>
-      <span>Sugar<span class="tag">Artisan Bakery</span></span>
-    </a>
-    <nav class="main-nav" aria-label="Primary">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" aria-current="page">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html#order" class="btn btn-pink">Order Now</a></li>
-      </ul>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Sugar Leaven</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
-  </div>
-</header>
 
-<main id="main">
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Our Story</h1>
+            <p class="page-subtitle">The art of baking, passed down through passion and dedication</p>
+        </div>
+    </header>
 
-  <section class="page-hero">
-    <div class="container">
-      <span class="eyebrow">Our Story</span>
-      <h1>Baked by hand, since day one</h1>
-      <p>Sugar started in a home kitchen with one starter, one oven, and a lot of trial and error. It still runs on the same principle — do less, but do it properly.</p>
-      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>About</span></div>
-    </div>
-  </section>
+    <!-- Our Story Section -->
+    <section class="section story-section">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text fade-in">
+                    <h2 class="section-title">Welcome to Sugar Leaven Patisserie</h2>
+                    <div class="section-divider"></div>
+                    <p class="story-paragraph">Sugar Leaven Patisserie was born from a simple yet profound belief: that the finest baked goods are created not just with skill, but with soul. What began as a passion project in our home kitchen has blossomed into Mumbai's cherished destination for artisan breads, delicate pastries, and celebration cakes that mark life's most meaningful moments.</p>
+                    <p class="story-paragraph">Located in the vibrant neighborhood of Powai, our boutique bakery is a labor of love—a place where traditional European techniques meet the warmth of Indian hospitality. Every morning, before the city fully awakens, our ovens glow with the promise of something extraordinary: sourdough loaves with crackling crusts, croissants with a thousand buttery layers, and cakes that are as beautiful as they are delicious.</p>
+                    <p class="story-paragraph">We don't believe in shortcuts. Our breads ferment slowly over days, developing complex flavors that mass production can never replicate. Our pastries are hand-laminated with imported butter, creating the delicate, flaky texture that defines true craftsmanship. And every cake that leaves our kitchen is a custom creation, designed with the same care you'd give to your own family celebrations.</p>
+                </div>
+                <div class="story-image fade-in">
+                    <img src="images/products/featured2.jpg" alt="Bakery interior and artisan breads" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="story">
-    <div class="container">
-      <div class="story-media reveal">
-        <img src="images/chef/bakery-interior.jpg" alt="Interior of Sugar bakery with wooden shelves and fresh bread" width="600" height="700" loading="lazy">
-      </div>
-      <div class="story-copy reveal">
-        <span class="eyebrow">How it started</span>
-        <h2>From a kitchen counter to a neighborhood bakery</h2>
-        <p>Sugar began the way most honest bakeries do: with too much bread for one household to eat. What started as loaves shared with neighbors slowly became weekend orders, then a market stall, and eventually the shop you can visit today.</p>
-        <p>We kept the parts that mattered — the slow ferment, the small batches, the attention to a recipe until it's right — and built a proper kitchen around them. Nothing here is mass-produced, and that's a deliberate choice, not a limitation.</p>
-        <p>Today, Sugar is still run day-to-day by the family that started it, alongside a small team of bakers who share the same standard: if it isn't good enough to serve a friend, it doesn't leave the kitchen.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Chef Aditi Section -->
+    <section class="section chef-detail-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Meet Our Chef</span>
+                <h2 class="section-title">Aditi | Professional Pastry Chef</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="chef-detail-content">
+                <div class="chef-detail-image fade-in">
+                    <img src="images/chef/chef.jpg" alt="Chef Aditi - Professional Pastry Chef" loading="lazy">
+                </div>
+                <div class="chef-detail-text fade-in">
+                    <p class="chef-lead">Aditi is the heart and hands behind every creation at Sugar Leaven. A professionally trained pastry chef with a deep reverence for the craft, she brings together classical technique, premium ingredients, and an intuitive understanding of flavor to create baked goods that linger in memory long after the last bite.</p>
+                    
+                    <div class="chef-highlights">
+                        <div class="highlight-item">
+                            <h4>Professional Training</h4>
+                            <p>Aditi honed her skills through rigorous training in European pastry arts, mastering the delicate balance of precision and creativity that defines fine patisserie.</p>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <h4>Philosophy</h4>
+                            <p>"Baking is alchemy—transforming simple ingredients into something that brings joy. I believe in respecting tradition while embracing innovation, and never compromising on quality."</p>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <h4>Hands-On Approach</h4>
+                            <p>Every batch is personally overseen by Aditi. From mixing to baking to finishing, she ensures that each creation meets her exacting standards before it reaches your table.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="chef-intro">
-    <div class="container">
-      <div class="chef-intro-media reveal">
-        <span class="badge">Head Chef</span>
-        <img src="images/chef/chef-portrait.jpg" alt="Portrait of the head chef of Sugar bakery in the kitchen" width="600" height="700" loading="lazy">
-      </div>
-      <div class="chef-intro-copy reveal">
-        <span class="eyebrow">Meet the Chef</span>
-        <h2>The chef behind every recipe</h2>
-        <p class="role">Owner &amp; Head Pastry Chef</p>
-        <p>Sugar's kitchen is led by the owner's wife, a trained pastry chef whose approach shapes every recipe that leaves the ovens. Her background spans classic French pastry technique and years of hands-on sourdough development, and it shows in the precision behind even the simplest items on our counter.</p>
-        <p>She built the Sugar menu from the ground up — testing hydration levels, fermentation windows, and lamination methods until each recipe met a standard she was willing to put her name behind. That standard hasn't moved since.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Culinary Journey Section -->
+    <section class="section journey-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Culinary Journey</span>
+                <h2 class="section-title">The Path to Mastery</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="journey-grid">
+                <div class="journey-card fade-in">
+                    <div class="journey-number">01</div>
+                    <h3>Foundation</h3>
+                    <p>Aditi's journey began with a deep fascination for the science of baking—understanding how heat transforms dough, how butter creates flakiness, how time develops flavor. This curiosity led to formal training in classical pastry techniques.</p>
+                </div>
+                
+                <div class="journey-card fade-in">
+                    <div class="journey-number">02</div>
+                    <h3>Refinement</h3>
+                    <p>Through years of dedicated practice and continuous learning, Aditi refined her skills, studying under accomplished chefs and absorbing knowledge from pastry traditions across Europe and beyond.</p>
+                </div>
+                
+                <div class="journey-card fade-in">
+                    <div class="journey-number">03</div>
+                    <h3>Creation</h3>
+                    <p>Sugar Leaven represents the culmination of this journey—a space where Aditi's expertise, passion, and vision come together to create something truly special for Mumbai's discerning palates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="pillars">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Our Approach</span>
-        <h2>Culinary journey &amp; philosophy</h2>
-        <p>Four ideas guide every recipe that makes it onto the Sugar counter.</p>
-      </div>
-      <div class="pillar-grid">
-        <div class="pillar-card reveal">
-          <h3><span class="icon-dot"></span> Culinary Journey</h3>
-          <p>Formal pastry training in classic French technique, followed by years spent developing natural fermentation methods for bread — a path that blends precision with patience.</p>
+    <!-- Philosophy Section -->
+    <section class="section philosophy-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Our Philosophy</span>
+                <h2 class="section-title">Guiding Principles</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="philosophy-grid">
+                <div class="philosophy-card fade-in">
+                    <div class="philosophy-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 14v10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Patience</h3>
+                    <p>Great baking cannot be rushed. Our sourdough ferments for days, our laminated doughs rest between folds, and our cakes are assembled with unhurried care.</p>
+                </div>
+                
+                <div class="philosophy-card fade-in">
+                    <div class="philosophy-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4L4 14l20 10 20-10L24 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M4 34l20 10 20-10" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M4 24l20 10 20-10" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Quality</h3>
+                    <p>We source only the finest ingredients—imported European butter, organic flours, real vanilla, and premium chocolate. The quality of what goes in determines the excellence of what comes out.</p>
+                </div>
+                
+                <div class="philosophy-card fade-in">
+                    <div class="philosophy-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 24l6 6 10-12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>We do what we say we'll do. When we promise a custom cake by a certain date, we deliver. When we say we use real ingredients, we mean it. Trust is earned, one creation at a time.</p>
+                </div>
+                
+                <div class="philosophy-card fade-in">
+                    <div class="philosophy-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4l4 12h12l-10 8 4 12-10-8-10 8 4-12-10-8h12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Excellence</h3>
+                    <p>Every day, we strive to be better than we were yesterday. Whether it's perfecting a recipe, improving a technique, or elevating our service, excellence is our constant pursuit.</p>
+                </div>
+            </div>
         </div>
-        <div class="pillar-card reveal">
-          <h3><span class="icon-dot"></span> Philosophy</h3>
-          <p>Good baking is mostly restraint: fewer ingredients, more time, and the discipline not to rush a process that depends on waiting.</p>
-        </div>
-        <div class="pillar-card reveal">
-          <h3><span class="icon-dot"></span> Baking Style</h3>
-          <p>Naturally leavened, minimally processed, and built around seasonal ingredients sourced from small regional suppliers wherever possible.</p>
-        </div>
-        <div class="pillar-card reveal">
-          <h3><span class="icon-dot"></span> Signature Specialties</h3>
-          <p>Country levain loaves, laminated butter croissants, and made-to-order celebration cakes designed around each client's occasion.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="specialties">
-    <div class="container">
-      <div class="section-head center reveal">
-        <span class="eyebrow">On the menu</span>
-        <h2>Signature Specialties</h2>
-        <p>A short list of what our kitchen is known for.</p>
-      </div>
-      <div class="spec-list">
-        <div class="spec-item reveal">
-          <h4>Country Levain</h4>
-          <p>Our house sourdough — 18-hour cold ferment, open crumb, deep crust.</p>
+    <!-- Baking Style Section -->
+    <section class="section style-section">
+        <div class="container">
+            <div class="style-content">
+                <div class="style-image fade-in">
+                    <img src="images/products/featured3.jpg" alt="Artisan baking process" loading="lazy">
+                </div>
+                <div class="style-text fade-in">
+                    <h2 class="section-title">Our Baking Style</h2>
+                    <div class="section-divider"></div>
+                    <p class="style-paragraph">Aditi's baking style is a harmonious blend of European precision and intuitive creativity. Trained in classical French and Italian pastry techniques, she approaches each creation with the rigor of a craftsman and the heart of an artist.</p>
+                    <p class="style-paragraph">Her signature style emphasizes balance—between sweetness and acidity, richness and lightness, tradition and innovation. A Sugar Leaven pastry is never cloying, never heavy, always leaving you wanting just one more bite.</p>
+                    <p class="style-paragraph">From the architectural precision of our layered cakes to the rustic elegance of our country loaves, every item reflects a deep respect for the ingredients and the craft. This is baking as it should be: honest, beautiful, and deeply satisfying.</p>
+                </div>
+            </div>
         </div>
-        <div class="spec-item reveal">
-          <h4>Garden Tier Cakes</h4>
-          <p>Custom celebration cakes, hand-decorated for weddings and milestones.</p>
-        </div>
-        <div class="spec-item reveal">
-          <h4>Butter Croissants</h4>
-          <p>Laminated over three days for a shatter-crisp, honeycomb interior.</p>
-        </div>
-        <div class="spec-item reveal">
-          <h4>Brown Butter Cookies</h4>
-          <p>Browned butter, dark chocolate, finished with flaky sea salt.</p>
-        </div>
-        <div class="spec-item reveal">
-          <h4>Seasonal Fruit Tarts</h4>
-          <p>Pastry cream and market fruit in a hand-blind-baked shell.</p>
-        </div>
-        <div class="spec-item reveal">
-          <h4>Celebration Cupcakes</h4>
-          <p>Small-batch flavors that rotate with the season and our mood.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="logo">Sugar</a>
-        <p>A family-run artisan bakery baking naturally leavened sourdough, pastries, and celebration cakes by hand, every day.</p>
-        <div class="social-row">
-          <a href="https://www.instagram.com/sugar_leaven" target="_blank" rel="noopener noreferrer" aria-label="Sugar on Instagram">IG</a>
+    <!-- Signature Specialties Section -->
+    <section class="section specialties-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Signature Specialties</span>
+                <h2 class="section-title">What We're Known For</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="specialties-grid">
+                <div class="specialty-card fade-in">
+                    <div class="specialty-image">
+                        <img src="images/products/sourdough2.jpg" alt="Artisan sourdough bread" loading="lazy">
+                    </div>
+                    <h3>Artisan Sourdough</h3>
+                    <p>Our signature sourdough loaves, naturally leavened and slow-fermented for 48-72 hours, develop a complex, tangy flavor and an incomparable crust.</p>
+                </div>
+                
+                <div class="specialty-card fade-in">
+                    <div class="specialty-image">
+                        <img src="images/products/cake2.jpg" alt="Custom celebration cake" loading="lazy">
+                    </div>
+                    <h3>Custom Celebration Cakes</h3>
+                    <p>From intimate birthdays to grand weddings, Aditi designs bespoke cakes that are as visually stunning as they are delicious, tailored to your unique vision.</p>
+                </div>
+                
+                <div class="specialty-card fade-in">
+                    <div class="specialty-image">
+                        <img src="images/products/pastries2.jpg" alt="French pastries" loading="lazy">
+                    </div>
+                    <h3>French Pastries</h3>
+                    <p>Classic viennoiserie—croissants, pain au chocolat, danishes—made with meticulous lamination and the finest imported butter for unparalleled flakiness.</p>
+                </div>
+                
+                <div class="specialty-card fade-in">
+                    <div class="specialty-image">
+                        <img src="images/products/cookies2.jpg" alt="Gourmet cookies" loading="lazy">
+                    </div>
+                    <h3>Gourmet Cookies</h3>
+                    <p>Rich, indulgent cookies crafted with premium chocolate, real vanilla, and a perfect balance of textures—chewy centers with crisp edges.</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Visit</h4>
-        <ul>
-          <li>128 Ashwood Lane</li>
-          <li>Your City, State</li>
-          <li>Tue–Sun, 8am–7pm</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get in touch</h4>
-        <ul>
-          <li><a href="tel:+15550102030">+1 (555) 010-2030</a></li>
-          <li><a href="mailto:hello@sugarbakery.example">hello@sugarbakery.example</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Sugar Bakery. All rights reserved.</span>
-      <span>Crafted with flour, butter, and patience.</span>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2 class="cta-title">Experience the Sugar Leaven Difference</h2>
+                <p class="cta-text">Visit us in Powai or place your custom order today. We can't wait to share our creations with you.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="js/script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Sugar Leaven</h3>
+                    <p class="footer-tagline">Artisan Bakery & Patisserie</p>
+                    <p class="footer-description">Handcrafted with love in the heart of Mumbai. Every creation is a testament to our passion for the art of baking.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/sugar_leaven" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Shop no. 39, First floor, Godrej Urban Park, Sangharsh Nagar, Chandivali, Powai, Mumbai 400072
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <a href="tel:+918700081249">+91 87000 81249</a>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <a href="mailto:hello@sugarleaven.com">hello@sugarleaven.com</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-hours">
+                    <h4>Business Hours</h4>
+                    <ul>
+                        <li>Monday - Sunday</li>
+                        <li>9:00 AM - 9:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sugar Leaven Patisserie. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
