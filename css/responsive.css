@@ -1,0 +1,70 @@
+/* =========================================================
+   SUGAR — Responsive rules
+   Breakpoints: 1024px (tablet), 768px (large mobile), 480px (small mobile)
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .insta-grid { grid-template-columns: repeat(3, 1fr); }
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; row-gap: var(--space-4); }
+  .spec-list { grid-template-columns: repeat(2, 1fr); }
+  .pillar-grid { grid-template-columns: 1fr; }
+
+  .intro .container,
+  .chef .container,
+  .story .container,
+  .chef-intro .container {
+    grid-template-columns: 1fr;
+  }
+  .chef-media, .story-media, .chef-intro-media { order: -1; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  section { padding: var(--space-5) 0; }
+
+  .main-nav {
+    position: fixed;
+    top: 0; right: 0;
+    width: min(320px, 82%);
+    height: 100vh;
+    background: var(--warm-white);
+    box-shadow: -10px 0 40px rgba(62,39,35,0.15);
+    transform: translateX(100%);
+    transition: transform 0.4s var(--ease);
+    padding: calc(var(--space-6)) var(--space-3) var(--space-3);
+  }
+  .main-nav.is-open { transform: translateX(0); }
+  .main-nav ul { flex-direction: column; align-items: flex-start; gap: var(--space-3); }
+  .nav-toggle { display: block; }
+
+  .hero-content { padding-top: var(--space-5); }
+  .hero-cta { flex-direction: column; align-items: flex-start; }
+  .hero-cta .btn { width: 100%; justify-content: center; }
+
+  .intro-media .float-card { left: 12px; bottom: -20px; max-width: 200px; }
+
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid { grid-template-columns: 1fr; }
+  .insta-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-item.tall { grid-row: span 1; }
+  .spec-list { grid-template-columns: 1fr; }
+
+  .form-row { grid-template-columns: 1fr; }
+
+  .lightbox-prev, .lightbox-next { display: none; }
+
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .container { width: 90%; }
+  .product-grid, .insta-grid, .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .btn { width: 100%; justify-content: center; }
+  .hero-content p { max-width: 100%; }
+  .site-header .logo span.tag { display: none; }
+}

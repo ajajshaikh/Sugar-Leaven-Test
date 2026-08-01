@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Orders — Sugar Artisan Bakery</title>
+<meta name="description" content="Visit Sugar bakery, place a custom cake order, or get in touch by phone, email, or WhatsApp. Find our address, hours, and directions.">
+<link rel="canonical" href="https://example.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact Sugar Bakery">
+<meta property="og:description" content="Visit, call, or message Sugar bakery to place an order or ask a question.">
+<meta property="og:image" content="images/hero/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="Sugar — home">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" stroke="#B8925A" stroke-width="1.5"/>
+        <path d="M14 27c1-7 6-13 10-13s9 6 10 13c0 4-4.5 7-10 7s-10-3-10-7Z" stroke="#3E2723" stroke-width="1.5" fill="none"/>
+        <path d="M18 22c2-3 3-5 3-7M24 20c0-3 1-5.5 2.5-8M30 22c-1.5-2.5-2-5-2-7" stroke="#B8925A" stroke-width="1.3" stroke-linecap="round"/>
+      </svg>
+      <span>Sugar<span class="tag">Artisan Bakery</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="contact.html#order" class="btn btn-pink">Order Now</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Get in Touch</span>
+      <h1>Visit, call, or place an order</h1>
+      <p>Stop by for a fresh loaf, or reach out about a custom celebration cake — we'd love to hear from you.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></div>
+    </div>
+  </section>
+
+  <section id="order">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <div class="contact-info-card">
+            <h3><span class="icon-badge">📍</span> Address</h3>
+            <p>128 Ashwood Lane<br>Your City, State 00000</p>
+          </div>
+          <div class="contact-info-card">
+            <h3><span class="icon-badge">📞</span> Phone</h3>
+            <p><a class="value" href="tel:+15550102030">+1 (555) 010-2030</a></p>
+          </div>
+          <div class="contact-info-card">
+            <h3><span class="icon-badge">✉️</span> Email</h3>
+            <p><a class="value" href="mailto:hello@sugarbakery.example">hello@sugarbakery.example</a></p>
+          </div>
+          <div class="contact-info-card">
+            <h3><span class="icon-badge">🕐</span> Business Hours</h3>
+            <table class="hours-table">
+              <tr><td>Monday</td><td>Closed</td></tr>
+              <tr><td>Tuesday – Friday</td><td>8:00 AM – 7:00 PM</td></tr>
+              <tr><td>Saturday – Sunday</td><td>8:00 AM – 5:00 PM</td></tr>
+            </table>
+          </div>
+          <div class="contact-actions">
+            <a href="https://wa.me/15550102030" target="_blank" rel="noopener noreferrer" class="btn btn-primary">WhatsApp Us</a>
+            <a href="https://www.instagram.com/sugar_leaven" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Instagram</a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <div class="contact-form-card">
+            <h2 style="font-size:1.5rem;margin-bottom:1.5rem;">Send us a message</h2>
+            <div class="form-success" role="status" tabindex="-1">Thank you — your message has been noted. We'll get back to you shortly.</div>
+            <form class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel">
+                </div>
+                <div class="form-group">
+                  <label for="reason">Reason for Contact</label>
+                  <select id="reason" name="reason">
+                    <option value="general">General Inquiry</option>
+                    <option value="celebration-cake">Celebration Cake Order</option>
+                    <option value="catering">Catering / Bulk Order</option>
+                    <option value="feedback">Feedback</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Tell us about your event, order, or question..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <p class="form-note">This form is for demonstration purposes only and does not currently send to a live inbox — connect it to your preferred form backend before publishing.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="map-embed reveal">
+        <!-- Replace the placeholder below with a real Google Maps embed iframe for your address -->
+        <div class="map-placeholder">
+          <strong>Map placeholder</strong>
+          <span>Replace this block with your Google Maps embed code (Google Maps → Share → Embed a map).</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<a href="https://wa.me/15550102030" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat with us on WhatsApp">💬</a>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Sugar</a>
+        <p>A family-run artisan bakery baking naturally leavened sourdough, pastries, and celebration cakes by hand, every day.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/sugar_leaven" target="_blank" rel="noopener noreferrer" aria-label="Sugar on Instagram">IG</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>128 Ashwood Lane</li>
+          <li>Your City, State</li>
+          <li>Tue–Sun, 8am–7pm</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+15550102030">+1 (555) 010-2030</a></li>
+          <li><a href="mailto:hello@sugarbakery.example">hello@sugarbakery.example</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sugar Bakery. All rights reserved.</span>
+      <span>Crafted with flour, butter, and patience.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
